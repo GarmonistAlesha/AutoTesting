@@ -16,7 +16,7 @@ public class AutorizationDromSite {
     void FindDromChrome()
     {
         Configuration.holdBrowserOpen = true; //Команда, при которой после прохождения теста браузер не закрывается
-        Configuration.browserSize = "1920x1080";
+        Configuration.browserSize = "medium";
         open(site);
         $(".oco7hz0").click();
         $(By.id("sign")).setValue(numberPhone); //Нахождение элемента по id в CSS
