@@ -1,10 +1,13 @@
 package org.example.autotesting;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 
+import static com.codeborne.selenide.Configuration.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 
 // page_url = https://www.jetbrains.com/
+
 public class MainPage {
   public SelenideElement seeDeveloperToolsButton = $x("//*[@data-test-marker='Developer Tools']");
   public SelenideElement findYourToolsButton = $x("//*[@data-test='suggestion-action']");

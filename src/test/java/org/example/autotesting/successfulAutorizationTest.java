@@ -16,7 +16,7 @@ public class successfulAutorizationTest {
     {
         Configuration.holdBrowserOpen = true; //Команда, при которой после прохождения теста браузер не закрывается
         Configuration.browserSize = "1920x1080"; // Изменение размера экрана
-        Configuration.browser = "firefox";
+        Configuration.browser = "chrome";
         //Открыть форму авторизации
         open("https://school.qa.guru/cms/system/login?required=true");
         //https://school.qa.guru/cms/system/login?required=true
