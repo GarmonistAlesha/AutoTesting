@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class AutorizationDromSite {
+ class AutorizationDromSite {
     private String numberPhone = "79234066654";
     private String password = "423197200893Mvp!";
     private String site = "https://www.drom.ru/";
