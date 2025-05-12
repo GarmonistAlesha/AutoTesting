@@ -86,7 +86,11 @@ class RegSiteTestPrimer {
         //Проверка соответствия выводимого текста
         $(".table-responsive").shouldHave(text(Name), text(LastName), text(Email),text(PhoneNumb));
         //Провекрка соответствия выводимых данных
-
+        /*
+        По символам в CSS селекторах
+        # ставится, когда мы вводим данные с показателя id
+        . ставится, когда мы вводим данные с показателя class
+         */
     }
 
 }
