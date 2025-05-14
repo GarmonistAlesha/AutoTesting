@@ -25,7 +25,7 @@ class SelenideGitHub
     $("#wiki-tab").click();
     $("#wiki-pages-filter").setValue("SoftAssertions");
     $(".filterable-active").shouldHave(text("SoftAssertions"));
-    //Поиск элемента текста в и нажатие на него( в случае, когда текст является ссылкой на страницу)
+    //Поиск элемента текста в и нажатие на него (в случае когда текст является ссылкой на страницу)
     $(byText("SoftAssertions")).click();
     $(".markdown-body").shouldHave(text("Using JUnit5 extend test class:"));
     sleep(5000);
