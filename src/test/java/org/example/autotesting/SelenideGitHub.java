@@ -1,23 +1,15 @@
 package org.example.autotesting;
 
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import test.TestBase;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-class SelenideGitHub
+class SelenideGitHub extends TestBase
 {
-    @BeforeAll
-    static void beforeAll()
-    {
-        Configuration.baseUrl = "https://github.com/";
-        Configuration.browserSize ="1920x1080";
-        Configuration.holdBrowserOpen = true;
-    }
     @Test
     void SelenideGitHubTest()
     {

@@ -1,6 +1,4 @@
-package RegistrationPage.components;
-
-import RegistrationPage.RegistrationPage;
+package PageObject.components;
 
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;

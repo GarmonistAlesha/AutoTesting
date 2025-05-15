@@ -1,14 +1,9 @@
 package org.example.autotesting;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.selector.ByText;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-
-import java.awt.*;
-import java.io.File;
 
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;
