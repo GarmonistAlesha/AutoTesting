@@ -75,6 +75,7 @@ public class RandomUtils {
         return values[index];
 
     }
+    //Создание рандомного имени и фамилии библиотекой Faker
     public static  String getFakerName()
     {
         return new Faker().name().firstName();
@@ -83,7 +84,7 @@ public class RandomUtils {
     {
         return new Faker().name().lastName();
     }
-
+    //Создание рандомного почты и номера телефона библиотекой Faker
     public static  String getFakerEmail()
     {
         return new Faker().internet().emailAddress();
@@ -100,7 +101,7 @@ public class RandomUtils {
         return new Faker().address().fullAddress();
 
     }
-//Зависимость выбора города от выбора штата
+    //Зависимость выбора города от выбора штата
     public static String getRandomCity(String state) {
         String[] cities;
         switch (state) {
