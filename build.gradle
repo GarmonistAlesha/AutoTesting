@@ -27,11 +27,14 @@ dependencies {
   testImplementation("io.qameta.allure:allure-selenide:${allureVersion}")
   testImplementation('org.slf4j:slf4j-simple:2.0.16')
   testImplementation('com.github.javafaker:javafaker:1.0.2')
+  testImplementation("com.codeborne:pdf-test:1.9.2")
 
 
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testImplementation("org.junit.jupiter:junit-jupiter-params:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
+
 }
 
 test {
