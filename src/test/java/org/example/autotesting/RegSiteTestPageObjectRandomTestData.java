@@ -25,9 +25,9 @@ class RegSiteTestPageObjectRandomTestData extends TestBase  { // extends TestBas
 
     void RegistrationPrimerPageObjeckt()  {
         registrationPage.OpenPage() // Открытие страницы сайта с помощью метода RegistrationPage, который вынесен отдельно
-        .SetFirstName(userName) // Открытие страницы сайта с помощью метода RegistrationPage, который вынесен отдельно
-        .SetLastName(lastName) // Открытие страницы сайта с помощью метода RegistrationPage, который вынесен отдельно
-        .SetEmail(userEmail) // Открытие страницы сайта с помощью метода RegistrationPage, который вынесен отдельно
+        .SetFirstName(userName)
+        .SetLastName(lastName)
+        .SetEmail(userEmail)
         .SetGender(gender)
         .SetPhoneNumber(phoneNumb)
         .SetBirthDay(dateBirth,monthBirth,yearBirth)

@@ -58,6 +58,6 @@ public class VskIpoteka {
     $(By.id("year-btn")).click();
     $(".ng-trigger-tuiDropdownAnimation").$(byText("2020")).click();
     $(By.id("date-rows")).$(byText("10")).click();
-    $(By.id("append-async-validation")).click();
+
     }
 }
