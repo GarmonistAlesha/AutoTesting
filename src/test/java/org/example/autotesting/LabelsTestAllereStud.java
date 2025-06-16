@@ -15,7 +15,6 @@ public class LabelsTestAllereStud {
     //Статическая аннотация
 
     //Тоже самое только в виде теста
-    @Test
     public void testDynamicLabels()
     {
         Allure.getLifecycle().updateTestCase(t -> t.setName("Проверка заполнения полей 'Ипотека' ВСК и получение отчета в Allure")); //
