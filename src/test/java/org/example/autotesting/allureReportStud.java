@@ -77,12 +77,25 @@ public class allureReportStud {
 
         });
 
+        /*
+        @Test
+        public void testWebSteps()
+    {
+        WebStepsAllureStud steps = new WebStepsAllureStud();
+        steps.openVskSite();
+        steps.IpotekaElement();
+        steps.setBank("Сбербанк");               // Так же можно создать тест с помощью аннотаций @Step, выведя шаги в отдельные классы
+                                                 // (подход WebSteps(лучше делать, т.к расчитан на переиспользование)
+                                                 // Разница в них в том, что за обработку @Step обрабатывает aspectjWeaver.set(true)
+        steps.modalWindowOpenAppruve();
+        steps.inputDate("2020","10");
+    }
+
+         */
         //Для генерации отчета в allure надо перейти в gradle/Tasks/verification/allureServe  и начнется генерация отчетов
         //с папкеи allure-results
 
-        // Так же можно создать тест с помощью аннотаций @Step, выведя шаги в отдельные классы
-        // (подход WebSteps(лучше делать, т.к расчитан на переиспользование)
-        // Разница в них в том, что за обработку @Step обрабатывает aspectjWeaver.set(true)
+
         //Урок 15 закончил на 55 минуте, дальше продолжить
     }
 }
