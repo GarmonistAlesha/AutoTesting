@@ -1,6 +1,6 @@
-package tests;
+package test;
 
-import RegistrationPage.RegistrationPage;
+import PageObject.RegistrationPage;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 //Создался для сокращения кода в тестах, конфигурация прописывается 1 раз

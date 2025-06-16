@@ -1,6 +1,4 @@
-package RegistrationPage.components;
-
-import org.openqa.selenium.By;
+package PageObject.components;
 
 import static com.codeborne.selenide.Selenide.$;
 

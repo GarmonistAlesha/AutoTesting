@@ -1,11 +1,9 @@
-package RegistrationPage;
+package PageObject;
 
-import RegistrationPage.components.CalendarComponent;
-import RegistrationPage.components.registrationResultsModal;
+import PageObject.components.*;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
@@ -14,6 +12,11 @@ public class RegistrationPage
 {
     private CalendarComponent calendarComponent = new CalendarComponent();
     private registrationResultsModal registrationResultsModal = new registrationResultsModal();
+    private UploadComponent uploadComponent =new UploadComponent();
+    private SpinnerComponents spinnerComponents = new SpinnerComponents();
+    private CurrentFormComponents currentFormComponents = new CurrentFormComponents();
+    private ButtonComponents buttonComponents = new ButtonComponents();
+
     private String Site = "https://demoqa.com/automation-practice-form";
     private String Name = "Jonh";
     private String Email = "test@gmail.com";
@@ -103,5 +106,51 @@ public class RegistrationPage
 
         return this;
 
+    }
+    public RegistrationPage SetSubjects(String value)
+    {
+        $("#subjectsInput").setValue(value).pressEnter();
+        return this;
+    }
+
+    public RegistrationPage SetHobbies (String value)
+    {
+        $("#hobbiesWrapper").$(byText(value)).click(); // Лучший вариант
+        return this;
+    }
+
+    //Метод загрузки файлов в папке resources
+    public RegistrationPage UploadPicture(String value)
+    {
+
+        uploadComponent.UploadPicture(value);
+        return this;
+    }
+
+    public RegistrationPage SetAdressRegistration(String value)
+    {
+
+        currentFormComponents.SetCurrentAdress(value);
+        return this;
+    }
+
+    public RegistrationPage SetState(String value)
+    {
+
+        spinnerComponents.SetStateRegistration(value);
+        return this;
+    }
+
+    public RegistrationPage SetCity(String value)
+    {
+
+        spinnerComponents.SetCityRegistration(value);
+        return this;
+    }
+
+    public RegistrationPage ClickSubmit()
+    {
+        buttonComponents.ClickButtonSubmit();
+        return this;
     }
 }
